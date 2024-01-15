@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Linea {
 
     private int id;
@@ -8,5 +10,10 @@ public class Linea {
         this.id = id;
         this.p1 = punto1;
         this.p2 = punto2;
+    }
+
+    public Linea(ArrayList<Punto> listaPuntos){
+        this.p1 = listaPuntos.get(0);
+        this.p2 = listaPuntos.get(1);
     }
 }
